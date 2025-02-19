@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ensure the element can still scroll */
+  .scroll-container {
+    overflow-y: auto;
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    height: 100vh; /* Adjust as needed */
+  }
