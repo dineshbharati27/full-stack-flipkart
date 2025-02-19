@@ -10,7 +10,7 @@ import PlaceOrder from "./PlaceOrder";
 import OrdersPage from "./OrdersPage";
 import MyProfile from "./MyProfile";
 import WishlistPage from "./WishListPage";
-import Category from "./category";
+import Category from "./Category";
 import Footer from "./Footer";
 
 const AppRouter = () => {
