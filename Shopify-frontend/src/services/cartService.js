@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ADD_TO_CART = "http://localhost:5000/api/user/cart";  // Replace with your actual API base URL
+const ADD_TO_CART = "https://full-stack-flipkart-pi.vercel.app/api/user/cart";  // Replace with your actual API base URL
 
 // Function to add product to cart
 export const addToCart = async (productId, userToken, userCart) => {
@@ -39,7 +39,7 @@ export const addToCart = async (productId, userToken, userCart) => {
 };
 
 
-const REMOVE_FROM_CART = "http://localhost:5000/api/remove-from-cart"; 
+const REMOVE_FROM_CART = "https://full-stack-flipkart-pi.vercel.app/api/remove-from-cart"; 
 
 export const removeFromCart = async (productId, userToken) => {
   try {

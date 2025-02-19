@@ -3,7 +3,7 @@ import axios from "axios";
 // Function to toggle the product in the wishlist (add/remove)
 export const toggleWishlist = async (productId, token, callback) => {
   try {
-    const response = await fetch("http://localhost:5000/api/add-to-wishlist", {
+    const response = await fetch("https://full-stack-flipkart-pi.vercel.app/api/add-to-wishlist", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,7 +26,7 @@ export const toggleWishlist = async (productId, token, callback) => {
 
 export const removeFromWishlist = async (productId, token) => {
   const response = await axios.post(
-    "http://localhost:5000/api/remove-from-wishlist",
+    "https://full-stack-flipkart-pi.vercel.app/api/remove-from-wishlist",
     { productId },
     { headers: { Authorization: `Bearer ${token}` } }
   );

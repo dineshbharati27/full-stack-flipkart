@@ -18,7 +18,7 @@ const OrdersPage = () => {
     if(user && user.user){
     const fetchOrders = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/user-orders", {
+        const res = await axios.get("https://full-stack-flipkart-pi.vercel.app/api/user-orders", {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },
@@ -87,7 +87,7 @@ const OrdersPage = () => {
     setCanceling(orderId); // Indicate which order is being canceled
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/cancel-order",
+        "https://full-stack-flipkart-pi.vercel.app/api/cancel-order",
         { orderId, userId: user.user._id },
         {
           headers: { Authorization: `Bearer ${user.token}` },
